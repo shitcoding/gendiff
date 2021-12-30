@@ -3,11 +3,17 @@ name = "hexlet-code"
 version = "0.0.1"
 description = "Generates diff."
 authors = ["Shitcoding"]
+packages = [
+    { include = "gendiff" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
