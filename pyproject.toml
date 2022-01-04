@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.0.1"
+version = "0.0.2"
 description = "Generates diff."
 authors = ["Shitcoding"]
 packages = [
@@ -11,6 +11,8 @@ packages = [
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
