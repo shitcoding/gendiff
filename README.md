@@ -1,4 +1,6 @@
-[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode) [![Actions Status](https://github.com/shitcoding/python-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/shitcoding/python-project-lvl2/actions)
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+[![Python CI](https://github.com/shitcoding/python-project-lvl2/actions/workflows/pyci.yml/badge.svg)](https://github.com/shitcoding/python-project-lvl2/actions/workflows/pyci.yml)
+[![Actions Status](https://github.com/shitcoding/python-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/shitcoding/python-project-lvl2/actions)
 ---
 # `gendiff` package
 Generates diff between plain and nested json and yaml files.
