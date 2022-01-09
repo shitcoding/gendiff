@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.0.2"
+version = "0.0.3"
 description = "Generates diff."
 authors = ["Shitcoding"]
 packages = [
