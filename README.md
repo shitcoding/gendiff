@@ -21,3 +21,7 @@ python3 -m pip install .
 ## Usage examples
 ### Generating diff between plain json files
 [![asciicast](https://asciinema.org/a/cIUjY8AHs4XfPRDEms5CAGw3Q.svg)](https://asciinema.org/a/cIUjY8AHs4XfPRDEms5CAGw3Q)
+
+### Generating diff between plain yaml files
+(Supported extensions: `yaml` and `yml`)
+[![asciicast](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn.svg)](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn)
