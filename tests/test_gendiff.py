@@ -1,5 +1,6 @@
 import json
 import os
+import yaml
 from gendiff import generate_diff
 
 
@@ -17,5 +18,12 @@ def read_file(file_path):
 def test_plain_json():
     data1 = json.load(open(get_fixture_path('plain1.json')))
     data2 = json.load(open(get_fixture_path('plain2.json')))
-    expected = read_file(get_fixture_path('plain_json_expected.txt')).rstrip()
+    expected = read_file(get_fixture_path('plain_expected.txt')).rstrip()
+    assert generate_diff(data1, data2) == expected
+
+
+def test_plain_yaml():
+    data1 = yaml.safe_load(open(get_fixture_path('plain1.yaml')))
+    data2 = yaml.safe_load(open(get_fixture_path('plain2.yaml')))
+    expected = read_file(get_fixture_path('plain_expected.txt')).rstrip()
     assert generate_diff(data1, data2) == expected
