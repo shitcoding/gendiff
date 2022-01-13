@@ -25,3 +25,7 @@ python3 -m pip install .
 ### Generating diff between plain yaml files
 (Supported extensions: `yaml` and `yml`)
 [![asciicast](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn.svg)](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn)
+
+### Generating diff between nested json and files
+(Supports `yaml-yaml`, `json-json`, `json-yaml`, `yaml-json` diffs)
+[![asciicast](https://asciinema.org/a/8hOMJP4LujnAXNbg2zrbOmt9e.svg)](https://asciinema.org/a/8hOMJP4LujnAXNbg2zrbOmt9e)
