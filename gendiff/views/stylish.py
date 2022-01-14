@@ -1,4 +1,4 @@
-"""Stylish view for diffs."""
+"""Stylish formatter for diffs."""
 
 
 def rename_spec_values(diff_str):
