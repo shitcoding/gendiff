@@ -19,13 +19,23 @@ python3 -m pip install .
 
 ---
 ## Usage examples
-### Generating diff between plain json files
+### `stylish` output formatter (default)
+#### Generating diff between plain json files with `stylish` output formatter
 [![asciicast](https://asciinema.org/a/cIUjY8AHs4XfPRDEms5CAGw3Q.svg)](https://asciinema.org/a/cIUjY8AHs4XfPRDEms5CAGw3Q)
 
-### Generating diff between plain yaml files
+#### Generating diff between plain yaml files with `stylish` output formatter
 (Supported extensions: `yaml` and `yml`)
 [![asciicast](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn.svg)](https://asciinema.org/a/DlX2MKX6RdWGJTNwH3giTr5Mn)
 
-### Generating diff between nested json and files
+#### Generating diff between nested json and files with `stylish` output formatter
 (Supports `yaml-yaml`, `json-json`, `json-yaml`, `yaml-json` diffs)
 [![asciicast](https://asciinema.org/a/8hOMJP4LujnAXNbg2zrbOmt9e.svg)](https://asciinema.org/a/8hOMJP4LujnAXNbg2zrbOmt9e)
+
+### `plain` output formatter
+Usage:
+```sh
+gendiff -f plain file1.json file2.json
+gendiff --format plain file1.yaml file2.yaml
+```
+#### Generating diff between nested json and files with `plain` output formatter
+[![asciicast](https://asciinema.org/a/faDbPvZWK6CnBEVushXxkZ8Hm.svg)](https://asciinema.org/a/faDbPvZWK6CnBEVushXxkZ8Hm)
