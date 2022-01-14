@@ -1,12 +1,13 @@
 """Gendiff script."""
 
 from gendiff import cli, generate_diff, parser
-from gendiff.views import plain, stylish
+from gendiff.views import json, plain, stylish
 
 
 FORMATTERS = {
-    'stylish': stylish,
+    'json': json,
     'plain': plain,
+    'stylish': stylish,
 }
 
 
