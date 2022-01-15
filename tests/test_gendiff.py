@@ -74,4 +74,3 @@ def test_nested_yaml_json_formatter():
     path2 = get_fixture_path('nested2.yaml')
     expected = get_expected_output('nested_expected_json.txt')
     assert generate_diff(path1, path2, formatter='json') == expected
-
