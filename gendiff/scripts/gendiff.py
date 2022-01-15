@@ -1,6 +1,6 @@
 """Gendiff script."""
 
-from gendiff import cli, generate_diff, parser
+from gendiff import cli, generate_diff
 from gendiff.views import json, plain, stylish
 
 
