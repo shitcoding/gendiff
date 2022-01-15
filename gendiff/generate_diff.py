@@ -1,7 +1,10 @@
 """Generate diff string between 2 dictionaries."""
 
+from gendiff.parser import parse
 
-def generate_diff(dict1, dict2):
+
+def generate_diff(data1, data2):
+    dict1, dict2 = parse(data1), parse(data2)
     diff = {}
     keys = dict1.keys() | dict2.keys()
     for key in keys:
