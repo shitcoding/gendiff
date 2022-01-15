@@ -5,18 +5,15 @@ import pathlib
 import yaml
 
 
-def parse(data):
+def parse(file_path):
     """
-    If 'data' is a dictionary: Return 'data' as it is.
-    If 'data' is a file path: Return dictionary containing data from input file.
+    Return dictionary containing data from input file.
     Accepts json and yaml files.
     Returns None if extension is not `json`, `yaml` or `yml`.
     """
-    if isinstance(data, dict):
-        return data
-    with open(data, 'r') as f:
+    with open(file_path, 'r') as f:
         data = f.read()
-    path = pathlib.Path(data)
+    path = pathlib.Path(file_path)
     extension = path.suffix.lower()
     if extension == 'json':
         return json.load(data)

@@ -1,20 +1,12 @@
 """Gendiff script."""
 
 from gendiff import cli, generate_diff
-from gendiff.views import json, plain, stylish
-
-
-FORMATTERS = {
-    'json': json,
-    'plain': plain,
-    'stylish': stylish,
-}
 
 
 def main():
     path1, path2 = cli.args.first_file, cli.args.second_file
-    formatter = FORMATTERS[cli.args.format]
-    return formatter.format_diff(generate_diff(path1, path2))
+    formatter = cli.args.format
+    return generate_diff(path1, path2, formatter)
 
 
 if __name__ == '__main__':
