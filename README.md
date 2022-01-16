@@ -37,5 +37,16 @@ Usage:
 gendiff -f plain file1.json file2.json
 gendiff --format plain file1.yaml file2.yaml
 ```
-#### Generating diff between nested json and files with `plain` output formatter
+#### Generating diff between nested json and yaml files with `plain` output formatter
 [![asciicast](https://asciinema.org/a/faDbPvZWK6CnBEVushXxkZ8Hm.svg)](https://asciinema.org/a/faDbPvZWK6CnBEVushXxkZ8Hm)
+
+
+### `json` output formatter
+Usage:
+```sh
+gendiff -f json file1.json file2.json
+gendiff --format json file1.yaml file2.yaml
+```
+
+#### Generating diff between nested json and files with `json` output
+[![asciicast](https://asciinema.org/a/ULYZbo6dVPIxojg6ig6nQqEUo.svg)](https://asciinema.org/a/ULYZbo6dVPIxojg6ig6nQqEUo)
