@@ -2,7 +2,7 @@
 
 from gendiff.diff import make_diff
 from gendiff.parser import parse
-from gendiff.views import json, plain, stylish
+from gendiff.formatters import json, plain, stylish
 
 
 FORMATTERS = {

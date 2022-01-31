@@ -1,6 +1,6 @@
 """Plain formatter for diffs."""
 
-from gendiff.views.stylish import rename_spec_values
+from gendiff.formatters.stylish import rename_spec_values
 
 
 def format_value(value):
