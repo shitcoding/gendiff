@@ -32,4 +32,3 @@ def test_gendiff(file1, file2, formatter, expected):
     path1 = get_path(file1)
     path2 = get_path(file2)
     assert generate_diff(path1, path2, formatter) == read_fixture(expected)
-
