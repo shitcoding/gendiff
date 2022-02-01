@@ -2,14 +2,7 @@
 
 from gendiff.diff import make_diff
 from gendiff.parser import parse
-from gendiff.formatters import json, plain, stylish
-
-
-FORMATTERS = {
-    'json': json,
-    'plain': plain,
-    'stylish': stylish,
-}
+from gendiff.formatters.formatters import FORMATTERS
 
 
 def generate_diff(path1, path2, formatter='stylish'):
